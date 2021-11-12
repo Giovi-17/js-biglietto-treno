@@ -20,14 +20,14 @@ const prezzoOver = ( ( prezzoB * 40 ) / 100 );
 //OUTPUT
 if (numEta < 18) {
 
-    document.getElementById('prezzoBiglietto').innerHTML = prezzoMin;
+    document.getElementById('prezzoBiglietto').innerHTML = prezzoMin.toFixed(2);
 
 } else if (numEta > 65) {
 
-    document.getElementById('prezzoBiglietto').innerHTML = prezzoOver;
+    document.getElementById('prezzoBiglietto').innerHTML = prezzoOver.toFixed(2);
 
 } else {
 
-    document.getElementById('prezzoBiglietto').innerHTML = prezzoB;
+    document.getElementById('prezzoBiglietto').innerHTML = prezzoB.toFixed(2);
 
 }
