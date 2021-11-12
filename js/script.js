@@ -2,15 +2,14 @@
 
 //Numero Km
 const numKm = parseInt ( prompt ("Quanti Kilometri devi percorrere?") );
-console.log(numKm);
+
 //Eta passeggero
 const numEta = parseInt ( prompt ("Qual e' la tua eta?") );
-console.log(numEta);
+
 //FASE DI CALCOLO
 
 //Prezzo biglietto
 const prezzoB = ( numKm * 0.21 );
-console.log(prezzoB);
 
 //Sconto minorenni
 const prezzoMin = ( ( prezzoB * 20 ) / 100 );
