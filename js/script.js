@@ -9,7 +9,7 @@ const numEta = parseInt ( prompt ("Qual e' la tua eta?") );
 //FASE DI CALCOLO
 
 //Prezzo biglietto
-const prezzoB = ( numKm * 0.21 );
+let prezzoB = ( numKm * 0.21 );
 
 //Sconto minorenni
 const prezzoMin = ( ( prezzoB * 20 ) / 100 );
@@ -19,12 +19,12 @@ const prezzoOver = ( ( prezzoB * 40 ) / 100 );
 
 //OUTPUT
 if (numEta < 18) {
-
-    document.getElementById('prezzoBiglietto').innerHTML = prezzoMin.toFixed(2);
+    prezzoB -= prezzoMin
+    document.getElementById('prezzoBiglietto').innerHTML = prezzoB.toFixed(2);
 
 } else if (numEta > 65) {
-
-    document.getElementById('prezzoBiglietto').innerHTML = prezzoOver.toFixed(2);
+    prezzoB -= prezzoOver
+    document.getElementById('prezzoBiglietto').innerHTML = prezzoB.toFixed(2);
 
 } else {
 
